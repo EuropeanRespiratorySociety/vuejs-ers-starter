@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Simple from '@/components/Simple'
+import Category from '@/components/Category'
+import Article from '@/components/Article'
 
 Vue.use(Router)
 
@@ -14,12 +15,17 @@ export default new Router({
     {
       path: '/:slug',
       name: 'News',
-      component: Simple
+      component: Category
+    },
+    {
+      path: '/articles/:slug',
+      name: 'Article',
+      component: Article
     },
     {
       path: '/:slug/page/:id',
       name: 'PaginatedNews',
-      component: Simple
+      component: Category
     }
   ]
 })

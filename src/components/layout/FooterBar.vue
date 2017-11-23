@@ -29,7 +29,7 @@
 
 <script>
   export default {
-    name: 'sleep-footer',
+    name: 'footer-bar',
     data () {
       return {
         e1: 'recent',

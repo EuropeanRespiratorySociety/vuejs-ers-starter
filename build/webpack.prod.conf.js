@@ -105,6 +105,9 @@ var webpackConfig = merge(baseWebpackConfig, {
       cacheId: 'my-vue-app',
       filename: 'service-worker.js',
       staticFileGlobs: ['dist/**/*.{js,html,css}'],
+      // add other files
+      // staticFileGlobs: ['dist/**/*.{js,html,css, png, jpg, jepg}'],
+      
       // added this to cache images for offline use
       // runtimeCaching: [{
       //   urlPattern: "https://www.ersnet.org/assets/preview/node/(.*)",
